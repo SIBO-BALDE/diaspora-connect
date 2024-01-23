@@ -1,0 +1,14 @@
+:root{
+    --principal:#D46F4D;
+    --seconde:#fff;
+    --troisieme:#0000;
+  }
+
+.maincontent{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.secondecontent{
+    display: grid;
+    grid-template-rows: 8% 78%;
+}
