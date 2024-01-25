@@ -55,7 +55,7 @@ export default function NavbarAccueil() {
     
     <Navbar collapseOnSelect expand="lg" className=" " id='navbarcontentmain'>
       <Container fluid>
-        <Navbar.Brand href="#"><Image src={logo} alt="" className='exemplelogo' /></Navbar.Brand>
+        <Navbar.Brand href="#"><Link to={'/'}><Image src={logo} alt="" className='exemplelogo' /></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav

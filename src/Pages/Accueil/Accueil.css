@@ -9,9 +9,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none !important;
-    
+    list-style: none !important; 
 }
+
 /* Stylisation banniere  */
 .bannaccueil{
     height: 641px !important;
@@ -31,14 +31,7 @@
   padding: 10px 15px;
 
 }
-@keyframes rotate {
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(-300deg);
-  }
-}
+
 .btncarrousel{
   text-decoration: none;
   color: var(--seconde);
@@ -413,6 +406,23 @@
     transition-property: all;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     scale: 1.2;
+  }
+  /* partenaires */
+  @keyframes slider {
+    0%, 20%, 100%	{ left: 0 }
+    25%, 45%		{ left: -100% }
+    50%, 70%		{ left: -200% }
+    75%, 95%		{ left: -300% }
+  }
+  
+  .partenaire{
+      animation: scroll  40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7))}
   }
   
   

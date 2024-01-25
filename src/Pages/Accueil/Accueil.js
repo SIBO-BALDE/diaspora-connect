@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Tooltip } from 'react-tooltip'
 import NavbarAccueil from '../../Components/Navbars/NavbarAccueil/NavbarAccueil'
 import Footer from '../../Components/Footer/Footer'
@@ -20,8 +20,14 @@ import { faBullseye, faCheck, faHandHoldingHeart, faHandshake, faLightbulb, faPe
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import Underline from '../../Components/Underline/Underline'
 import ButtonWatshapp from '../../Components/Buttons/BouttonWatshapp/ButtonWatshapp'
+import Incrementation from '../../Components/Incrementation/Incrementation'
 
 export default function Accueil() {
+ 
+
+
+
+
   return (
     <div>
       {/* Header*/}
@@ -246,24 +252,30 @@ export default function Accueil() {
         
         <div className='bannerimpact'>
         <div className='contentimpact1'>
-          <h1 className='contentimpactcolor'>1000 +</h1>
+        {/* <Incrementation duration={9000} toValue={1000} fromValue={0} delimiter="+"> */}
+        {/* <h1 className='contentimpactcolor' data-duration="9000" data-to-value="1000" data-from-value="0" data-delimiter="+">1000 +</h1> */}
+        <Incrementation duration={9000} toValue={1000} fromValue={0} delimiter="+"/>
+        {/* </Incrementation> */}
           <p className='contentimpactcolor'>Nombre de Maison vendu</p>
         </div>
         <div className='linebeteween'></div>
         <div className='contentimpact1'>
-          <h1 className='contentimpactcolor'>1577 +</h1>
+          {/* <h1 className='contentimpactcolor' data-duration="9000" data-to-value="1577" data-from-value="0" data-delimiter="+">1577 +</h1> */}
+          <Incrementation duration={9000} toValue={1577} fromValue={0} delimiter="+"/>
           <p className='contentimpactcolor'>Nombre de terrain vendu</p>
           {/* <div className='linebeteween'></div> */}
         </div>
         <div className='linebeteween'></div>
         <div className='contentimpact1'>
-          <h1 className='contentimpactcolor'> 87,6 %</h1>
+          {/* <h1 className='contentimpactcolor'> 87,6 %</h1> */}
+          <Incrementation duration={9000} toValue={86} fromValue={0} delimiter="%"/>
           <p className='contentimpactcolor'> Taux nombre de maison  construtes</p>
           {/* <div className='linebeteween'></div> */}
         </div>
         <div className='linebeteween'></div>
         <div className='contentimpact1'>
-          <h1 className='contentimpactcolor'> 75%</h1>
+          {/* <h1 className='contentimpactcolor'> 75%</h1> */}
+          <Incrementation duration={9000} toValue={75} fromValue={0} delimiter="%"/>
           <p className='contentimpactcolor'> Taux de plan de maison livré</p>
           {/* <div className='linebeteween'></div> */}
         </div>
@@ -271,8 +283,8 @@ export default function Accueil() {
         </div>
       {/* section impact  fin*/}
 
+
       {/* section nos partenaire  debut*/}
-    
       <div className='mt-5 mb-4'>
       <Underline  text='Ils nous font confiance'/>
       </div>
@@ -289,6 +301,12 @@ export default function Accueil() {
           </div>
           <div className="card_partenaire">
         <Image src={siam} alt="" className='card-partenaire-img' />
+          </div>
+          <div className="card_partenaire">
+        <Image src={atepa} alt="" className='card-partenaire-img' />
+          </div>
+          <div className="card_partenaire">
+        <Image src={seneguindia} alt=""  className='card-partenaire-img'/>
           </div>
         </div>
      </div>

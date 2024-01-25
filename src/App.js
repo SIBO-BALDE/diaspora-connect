@@ -25,6 +25,7 @@ import GestionUtilisateurs from './Pages/GestionUtilisateurs/GestionUtilisateurs
 import Panier from './Pages/Panier/Panier';
 import GestionPayment from './Pages/GestionPayment/GestionPayment';
 
+
 function App() {
   return (
     <div >
@@ -53,6 +54,7 @@ function App() {
         <Route path='/gestionservices' element={<GestionServices />}></Route>
         <Route path='/gestionarticle' element={<GestionArticles />}></Route>
         <Route path='/gestionpayment' element={<GestionPayment />}></Route>
+       
       </Routes>
    
     </div>
