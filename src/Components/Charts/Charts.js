@@ -8,7 +8,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 export const data = {
-  labels: ['Projet de construction terminés', 'Projet de construction restants'],
+  labels: [ 'Projet de construction restants','Projet de construction terminés'],
   datasets: [
     {
     //   label: '# of Votes',
@@ -29,14 +29,21 @@ export const data = {
 
 };
 const options = {
+  aspectRatio: 1.5, // Ajuste la hauteur du graphique
+  cutout: '77%',
     plugins: {
       legend: {
         position: 'bottom', // Positionne la légende en bas
       },
+      labels: {
+        font: {
+          size: 15, // Ajustez la taille de la police ici
+        },
+      },
       datalabels: {
         color: 'red', // Couleur du texte
         font: {
-          size: '16', // Taille de la police du texte
+          size: '12', // Taille de la police du texte
         },
         formatter: (value, context) => {
           return context.dataIndex + ': ' + Math.round(value*100) + '%';
