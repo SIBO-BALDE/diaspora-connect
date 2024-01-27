@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
  export default function GestionServices() {
   
   const [showServices, setShowServices] = useState(false);
-  const [showEditModalLand, setShowEditModalLand] = useState(false);
+  const [showEditModalServices, setShowEditModalServices] = useState(false);
 
-  const handleCloseLand = () => setShowServices(false);
+  const handleCloseServices = () => setShowServices(false);
   const handleshowServices = () => setShowServices(true);
-  const handleCloseEditLand = () => setShowEditModalLand(false);
-  const  handleShowEditLand= () => setShowEditModalLand(true);
+  const handleCloseEditServices = () => setShowEditModalServices(false);
+  const  handleShowEditServices= () => setShowEditModalServices(true);
    return (
     <div className='container'>
     <div className='d-flex justify-content-between mt-5'>
@@ -60,7 +60,7 @@ import { Link } from "react-router-dom";
             </td>
             <td>Construction de maison</td>
             <td className='d-flex justify-content-evenly'>
-              <Button variant="primary" onClick={handleShowEditLand} style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}} id='buttonModifier'>
+              <Button variant="primary" onClick={handleShowEditServices} style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}} id='buttonModifier'>
                 <FontAwesomeIcon icon={faPenToSquare} />
               </Button>
               <Button style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}}>
@@ -78,7 +78,7 @@ import { Link } from "react-router-dom";
             </td>
             <td>Plan structural</td>
             <td className='d-flex justify-content-evenly'>
-              <Button variant="primary" onClick={handleShowEditLand} style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}} id='buttonModifier'>
+              <Button variant="primary" onClick={handleShowEditServices} style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}} id='buttonModifier'>
                 <FontAwesomeIcon icon={faPenToSquare} />
               </Button>
               <Button style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}}>
@@ -95,7 +95,7 @@ import { Link } from "react-router-dom";
 
     {/* modal debut  ajouter maison*/}
     <>
-  <Modal show={showServices} onHide={handleCloseLand} id='buttonAjouter'>
+  <Modal show={showServices} onHide={handleCloseServices} id='buttonAjouter'>
     <Modal.Header closeButton>
       <Modal.Title>Ajouter Service</Modal.Title>
     </Modal.Header>
@@ -116,10 +116,10 @@ import { Link } from "react-router-dom";
     </Form>
     </Modal.Body>
     <Modal.Footer>
-      <Button variant="secondary" onClick={handleCloseLand}>
+      <Button variant="secondary" onClick={handleCloseServices}>
         Ajouter
       </Button>
-      <Button variant="primary" onClick={handleCloseLand}>
+      <Button variant="primary" onClick={handleCloseServices}>
         Fermer
       </Button>
     </Modal.Footer>
@@ -129,7 +129,7 @@ import { Link } from "react-router-dom";
 
 
     {/* modal debut modifier maison */}
-    <Modal show={showEditModalLand} onHide={handleCloseEditLand} id='buttonModifier'>
+    <Modal show={showEditModalServices} onHide={handleCloseEditServices} id='buttonModifier'>
     <Modal.Header closeButton>
       <Modal.Title>Modifier Service</Modal.Title>
     </Modal.Header>
@@ -150,10 +150,10 @@ import { Link } from "react-router-dom";
     </Form>
     </Modal.Body>
     <Modal.Footer>
-      <Button variant="secondary" onClick={handleCloseEditLand}>
+      <Button variant="secondary" onClick={handleCloseEditServices}>
         Ajouter
       </Button>
-      <Button variant="primary" onClick={handleCloseEditLand}>
+      <Button variant="primary" onClick={handleCloseEditServices}>
         Fermer
       </Button>
     </Modal.Footer>

@@ -12,9 +12,12 @@ import DetailServices from "./Pages/Services/DetailServices";
 import Terrains from "./Pages/Terrains/Terrains";
 import DetailTerrain from "./Pages/Terrains/DetailTerrain";
 import Apropos from "./Pages/Apropos/Apropos";
-import Panier from "./Pages/Panier/Panier";
-import DetailArticles from "./Pages/Articles/DetailArticle";
+// import Panier from "./Pages/Panier/Panier";
+// import DetailArticles from "./Pages/Articles/DetailArticle";
 import DetailFavorie from "./Pages/GestionFavorie/DetailFavorie";
+import DetailServicesAdmin from "./Pages/GestionServices/DetailServicesAdmin";
+import DetailMaisonAdmin from "./Pages/GestionMaison/DetailMaisonAdmin";
+// import DetailTerrainAdmin from "./Pages/GestionMaison/DetailTerrainAdmin";
 
 
 
@@ -34,12 +37,17 @@ function App() {
         <Route path="detailservices" element={<DetailServices />}></Route>
         <Route path="terrains" element={<Terrains />}></Route>
         <Route path="detailterrain" element={<DetailTerrain />}></Route>
-        <Route path="detailFavorie" element={<DetailFavorie/>}></Route>
+        
         <Route path="/a-propos" element={<Apropos />}></Route>
         {/* <Route path="/panier" element={<Panier />}></Route> */}
         {/* <Route path='/article' element={<Articles />}></Route> */}
         {/* <Route path="/detailarticle" element={<DetailArticles />}></Route> */}
+
         {/* Composant coté admin */}
+        <Route path="detailFavorie" element={<DetailFavorie/>}></Route>
+        <Route path="detailservicesadmin" element={<DetailServicesAdmin/>}></Route>
+        <Route path="detailmaisonadmin" element={<DetailMaisonAdmin/>}></Route>
+        {/* <Route path="detailterrainAdmin" element={<DetailTerrainAdmin/>}></Route> */}
       </Routes>
     </div>
   );

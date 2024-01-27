@@ -165,6 +165,7 @@ export default function DashbordAdmin() {
             isOpen={isSidebarOpen}
             name={name}
             handleChangePath={handleChangePath}
+            id='sidebar-content'
           />
         </div>
         <div className="secondecontent">

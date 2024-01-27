@@ -91,4 +91,92 @@
   thead #hearder-color{
     background-color: var(--principal) !important;
   }
+
+  @media screen and (max-width: 1337px){
+    .maincontent-dashbord-static {
+        display: block;
+        /* grid-template-columns: 15% 85%; */
+        height: 100vh;
+      }
+      #sidebar-content{
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+  }
+  @media only screen and (max-width: 768px) {
+    .dashbord-content-main-one {
+      grid-template-columns: 100%;
+    }
+  
+    .content-left-admin-dashbord {
+      grid-template-columns: 100%;
+    }
+    }
+    /* Vos styles existants ... */
+
+@media only screen and (max-width: 650px) {
+    .dashbord-content-main-one {
+      grid-template-columns: 100%;
+    }
+  
+    .content-left-admin-dashbord {
+      grid-template-columns: 100%;
+    }
+  
+    .img-profile-tab-admin {
+      height: 20px; /* Ajustez la taille de l'image selon vos besoins */
+      width: 20px;
+    }
+  
+    .conten-admin-2,
+    .content-diagramme-circulaire-right-conten-2 {
+      width: 100%; /* Assurez-vous que ces éléments occupent 100% de la largeur */
+    }
+  }
+/* Vos styles existants ... */
+
+@media only screen and (max-width: 650px) {
+    /* Les règles pour une largeur d'écran entre 651px et 650px */
+    .dashbord-content-main-one {
+      grid-template-columns: 100%;
+    }
+  
+    .content-left-admin-dashbord {
+      grid-template-columns: 100%;
+    }
+  
+    .img-profile-tab-admin {
+      height: 20px; /* Ajustez la taille de l'image selon vos besoins */
+      width: 20px;
+    }
+  
+    .conten-admin-2,
+    .content-diagramme-circulaire-right-conten-2 {
+      width: 100%; /* Assurez-vous que ces éléments occupent 100% de la largeur */
+    }
+  }
+  
+  @media only screen and (max-width: 566px) {
+    /* Les règles pour une largeur d'écran de 566px ou moins */
+    .dashbord-content-main-one {
+      grid-template-columns: 100%;
+    }
+  
+    .content-left-admin-dashbord {
+      grid-template-columns: 100%;
+    }
+  
+    .img-profile-tab-admin {
+      height: 15px; /* Ajustez la taille de l'image selon vos besoins */
+      width: 15px;
+    }
+  
+    .conten-admin-2,
+    .content-diagramme-circulaire-right-conten-2 {
+      width: 100%; /* Assurez-vous que ces éléments occupent 100% de la largeur */
+    }
+  }
+    
+  
   

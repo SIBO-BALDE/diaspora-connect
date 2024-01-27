@@ -70,3 +70,11 @@ body {
 .logouticon {
   font-size: 30px;
 }
+@media screen and (max-width: 1337px) {
+  #content-try-content{
+    display:flex;
+    height: fit-content;
+    
+  }
+}
+

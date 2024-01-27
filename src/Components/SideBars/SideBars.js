@@ -76,7 +76,7 @@ export default function SideBars({ isOpen, name, handleChangePath }) {
           <p className="text-center">Moussa Basse</p>
           <hr />
         </div>
-        <div>
+        <div id="content-try-content">
           {links.map((link) => (
             <div
               className={`contentlink mt-4 ${

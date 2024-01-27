@@ -51,7 +51,6 @@ import { Link } from "react-router-dom";
             <th  style={{backgroundColor:'#d46f4d' , color:'#fff'}}>Adress</th>
             <th  style={{backgroundColor:'#d46f4d', color:'#fff' }}>Superficie</th>
             <th  style={{backgroundColor:'#d46f4d', color:'#fff' }}>Prix</th>
-            <th  style={{backgroundColor:'#d46f4d', color:'#fff' }}>Categorie</th>
             <th className='d-flex  justify-content-center ' style={{backgroundColor:'#d46f4d', color:'#fff',marginLeft:'3rem' }}>Action</th>
           </tr>
         </thead>
@@ -64,7 +63,6 @@ import { Link } from "react-router-dom";
             <td>Diasse 123 Rue  Sonko</td>
             <td>150 m2</td>
             <td>50.000.000FCFA</td>
-            <td>R+4</td>
             <td className='d-flex justify-content-evenly'>
               <Button variant="primary" onClick={handleShowEditLand} style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}} id='buttonModifier'>
                 <FontAwesomeIcon icon={faPenToSquare} />
@@ -85,7 +83,6 @@ import { Link } from "react-router-dom";
             <td>Diasse 123 Rue  Sonko</td>
             <td>150 m2</td>
             <td>50.000.000FCFA</td>
-            <td>R+4</td>
             <td className='d-flex justify-content-evenly'>
               <Button variant="primary" onClick={handleShowEditLand} style={{backgroundColor:'#fff' , border:'1px solid #d46f4d', color:'#d46f4d'}} id='buttonModifier'>
                 <FontAwesomeIcon icon={faPenToSquare} />
@@ -158,7 +155,7 @@ import { Link } from "react-router-dom";
     {/* modal debut modifier maison */}
     <Modal show={showEditModalLand} onHide={handleCloseEditLand} id='buttonModifier'>
     <Modal.Header closeButton>
-      <Modal.Title>Modifier maison</Modal.Title>
+      <Modal.Title>Modifier terrain</Modal.Title>
     </Modal.Header>
     <Modal.Body> 
       <Form>
